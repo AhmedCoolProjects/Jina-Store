@@ -18,12 +18,13 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { mainListItems } from "../components/ListItemsC";
 import Copyright from "../components/CopyrightC";
 import google from "../assets/google.svg";
-import fb from "../assets/facebook.svg";
+import twitter from "../assets/twitter.svg";
 import linkedin from "../assets/linkedin.svg";
 import github from "../assets/github.svg";
 import { Avatar } from "@material-ui/core";
 import CarouselC from "../components/CarouselC";
 import FiltringC from "../components/FiltringC";
+import Link from "@material-ui/core/Link";
 import ProductsP from "./ProductsP";
 
 const drawerWidth = 240;
@@ -144,21 +145,50 @@ export default function Dashboard({ category }) {
             className={classes.title}>
             {category}
           </Typography>
-          <IconButton color="inherit">
-            <Avatar style={{ width: "1.5em", height: "1.5em" }} src={google} />
-          </IconButton>
-          <IconButton color="inherit">
-            <Avatar
-              style={{ width: "1.5em", height: "1.5em" }}
-              src={linkedin}
-            />
-          </IconButton>
-          <IconButton color="inherit">
-            <Avatar style={{ width: "1.5em", height: "1.5em" }} src={fb} />
-          </IconButton>
-          <IconButton color="inherit">
-            <Avatar style={{ width: "1.5em", height: "1.5em" }} src={github} />
-          </IconButton>
+          <Link
+            target="blank_"
+            color="inherit"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=jinacoolprojects@gmail.com">
+            <IconButton color="inherit">
+              <Avatar
+                style={{ width: "1.5em", height: "1.5em" }}
+                src={google}
+              />
+            </IconButton>
+          </Link>
+          <Link
+            target="blank_"
+            color="inherit"
+            href="https://www.linkedin.com/in/bargady-ahmed-082b30177">
+            <IconButton color="inherit">
+              <Avatar
+                style={{ width: "1.5em", height: "1.5em" }}
+                src={linkedin}
+              />
+            </IconButton>
+          </Link>
+          <Link
+            target="blank_"
+            color="inherit"
+            href="https://twitter.com/AhmedBargady?s=09">
+            <IconButton color="inherit">
+              <Avatar
+                style={{ width: "1.5em", height: "1.5em" }}
+                src={twitter}
+              />
+            </IconButton>
+          </Link>
+          <Link
+            target="blank_"
+            color="inherit"
+            href="https://github.com/AhmedCoolProjects">
+            <IconButton color="inherit">
+              <Avatar
+                style={{ width: "1.5em", height: "1.5em" }}
+                src={github}
+              />
+            </IconButton>
+          </Link>
         </Toolbar>
       </AppBar>
       <Drawer

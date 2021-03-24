@@ -11,7 +11,6 @@ import Switch from "@material-ui/core/Switch";
 import LocalOfferOutlinedIcon from "@material-ui/icons/LocalOfferOutlined";
 import Collapse from "@material-ui/core/Collapse";
 import Slider from "@material-ui/core/Slider";
-import Typography from "@material-ui/core/Typography";
 
 import AccessibilityOutlinedIcon from "@material-ui/icons/AccessibilityOutlined";
 import ExpandLess from "@material-ui/icons/ExpandLess";
@@ -52,20 +51,7 @@ export default function FiltringC() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  //   const [checked, setChecked] = React.useState(["wifi"]);
 
-  //   const handleToggle = (value) => () => {
-  //     const currentIndex = checked.indexOf(value);
-  //     const newChecked = [...checked];
-
-  //     if (currentIndex === -1) {
-  //       newChecked.push(value);
-  //     } else {
-  //       newChecked.splice(currentIndex, 1);
-  //     }
-
-  //     setChecked(newChecked);
-  //   };
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {

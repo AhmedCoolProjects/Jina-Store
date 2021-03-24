@@ -7,7 +7,10 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://jinaesischool.web.app/">
+      <Link
+        target="blank_"
+        color="inherit"
+        href="https://www.linkedin.com/in/bargady-ahmed-082b30177">
         Ahmed BARGADY
       </Link>{" "}
       {new Date().getFullYear()}
